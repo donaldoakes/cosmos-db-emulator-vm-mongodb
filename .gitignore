@@ -1,0 +1,8 @@
+.vagrant/
+*.msi
+*.MSI
+*.exe
+*.zip
+nssm/
+node_modules/
+service_loop.txt
