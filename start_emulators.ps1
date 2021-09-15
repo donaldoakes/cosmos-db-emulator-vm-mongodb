@@ -18,7 +18,7 @@ Do {
     printAndLog -argstring "Service Loop: $epoch"
 
     printAndLog -argstring "Start-CosmosDbEmulator"
-    Start-Process "C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe" -ArgumentList "/noexplorer","/allownetworkaccess","/computeport=0","/key=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==","/nofirewall","/noui","/disableratelimiting", "/EnableMongoDbEndpoint=3.6", "/MongoPort=10255" -ErrorAction Stop -PassThru
+    Start-Process "C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe" -ArgumentList "/noexplorer","/allownetworkaccess","/computeport=0","/key=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==","/nofirewall","/noui","/disableratelimiting", "/EnableMongoDbEndpoint=4.0", "/MongoPort=10255" -ErrorAction Stop -PassThru
     
     printAndLog -argstring "SqlLocalDB.exe create MSSQLLocalDB"
     Start-Process -wait "C:\Program Files\Microsoft SQL Server\110\Tools\Binn\SqlLocalDB.exe" -ArgumentList "create","MSSQLLocalDB"

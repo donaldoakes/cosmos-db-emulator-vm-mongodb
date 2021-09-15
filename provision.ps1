@@ -1,4 +1,4 @@
-Write-Output "Intalling Cosmos DB Emulator"
+Write-Output "Installing Cosmos DB Emulator"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 (New-Object System.Net.WebClient).DownloadFile('https://aka.ms/cosmosdb-emulator', 'C:\vagrant\cosmos.msi')
 Start-Process -wait C:\vagrant\cosmos.msi -ArgumentList "/quiet"

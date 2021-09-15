@@ -12,7 +12,7 @@
 
 `xfreerdp /cert-ignore /u:vagrant /p:vagrant /v:127.0.0.1:33389`
 
-# Azure Comsos Emulator
+# Azure Cosmos Emulator
 
 ### Cosmos Web UI
 
